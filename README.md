@@ -1,6 +1,6 @@
 # 🚖 NYC Taxi Data Visualization (Power BI)
 
-Interactive Power BI dashboard analyzing **269M+ NYC Taxi trips** (Yellow & Green Taxi) across **2019–2024**. The report focuses on fleet comparison, geographical trip distribution, and temporal demand patterns.
+Interactive Power BI dashboard analyzing **269M+ NYC Taxi trips** (Yellow & Green Taxi) across **2019–2023**. The report focuses on fleet comparison, geographical trip distribution, and temporal demand patterns.
 
 ---
 
@@ -65,5 +65,5 @@ The purpose was to improve performance ans reduce the volume of dataset.
 
 
 1. Clone this repository.
-2. Download the `.pbix` file from the [Releases](../../releases) tab *(lub wklej tu link do pobrania)*.
+2. Download the `.pbix` file from the [Releases](../../releases) tab.
 3. Open using **Power BI Desktop**.
