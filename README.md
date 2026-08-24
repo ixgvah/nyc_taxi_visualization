@@ -63,7 +63,7 @@ The purpose was to optimize query performance and reduce overall dataset volume.
 
 ---
 
-## 📊 Dashboard Views & Key Insights
+## Dashboard Views & Key Insights
 ### 1. Executive Summary & Fleet Dynamics
 <img width="1268" height="1078" alt="image" src="https://github.com/user-attachments/assets/4ac075af-924e-42ba-9f66-2903096860d8" />
 
@@ -78,7 +78,7 @@ The purpose was to optimize query performance and reduce overall dataset volume.
 
 ---
 
-## 🚀 How to View the Dashboard
+## How to View the Dashboard
 
 1. Download the `.pbix` file from the **[Releases](https://github.com/ixgvah/nyc_taxi_report/releases/tag/v1.1)** tab.
 2. Open locally using **Microsoft Power BI Desktop**.
