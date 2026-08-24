@@ -1,12 +1,12 @@
 # 🚖 NYC Taxi Data Visualization (Power BI)
 
-Interactive Power BI dashboard analyzing **269M+ NYC Taxi trips** (Yellow & Green Taxi) across **2019–2023**. The report focuses on fleet comparison, geographical trip distribution, and temporal demand patterns.
+Interactive Power BI dashboard analyzing **105M NYC Taxi trips** (Yellow & Green Taxi) across **2019–2023**. The report focuses on fleet comparison, geographical trip distribution, and temporal demand patterns.
 
 ---
 
 ## Project Overview & Key Questions
 
-The goal of this project was to design a high-performance Power BI business intelligence solution to help **fleet managers, city planners and data analysts** understand urban mobility patterns, pricing dynamics, and fleet utilization in New York City.
+The goal of this project was to design a high-performance Power BI business intelligence solution to help **fleet managers, city planners, and data analysts** understand urban mobility patterns, pricing dynamics, and fleet utilization in New York City.
 
 The dashboard answers the following business questions:
 
@@ -30,10 +30,10 @@ The dashboard answers the following business questions:
 Data was sourced directly from the **NYC Taxi & Limousine Commission (TLC)**:
 * **Official Data Page:** [NYC TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 * **Data Dictionaries:**
-* [Yellow Taxi Dictionary (PDF)](https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf) |
-* [Green Taxi Dictionary (PDF)](https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_green.pdf)
+  * [Yellow Taxi Dictionary (PDF)](https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf)
+  * [Green Taxi Dictionary (PDF)](https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_green.pdf)
 
-The dataset covers **2019–2024** years to capture long-term structural market shifts and track recovery following the COVID-19 pandemic.
+The dataset covers **2019–2023** to capture long-term structural market shifts and track recovery following the COVID-19 pandemic.
 
 ---
 
@@ -46,8 +46,8 @@ Raw monthly Parquet files contain millions of unaggregated trip-level records. T
 * **Data Cleansing:** Filtered out invalid records (e.g., negative `fare_amount`, negative `trip_distance`, out-of-scope trip timestamps).
 
 ### Aggregation Grain:
-Data was aggregated by following data`taxi_type` | `pickup_date` | `pickup_hour` | `pickup_location_key` | `dropoff_location_key` | `rate_code_key` | `payment_type`.
-The purpose was to improve performance ans reduce the volume of dataset. 
+Data was aggregated by the following dimensions: `taxi_type` | `pickup_date` | `pickup_hour` | `pickup_location_key` | `dropoff_location_key` | `rate_code_key` | `payment_type`.  
+The purpose was to optimize query performance and reduce overall dataset volume.
 
 ### Extracted Aggregations:
 * `trip_count`: Total number of rides (provides the weight for accurate ratio calculations in DAX).
@@ -63,7 +63,22 @@ The purpose was to improve performance ans reduce the volume of dataset.
 
 ---
 
+## 📊 Dashboard Views & Key Insights
+### 1. Executive Summary & Fleet Dynamics
+<img width="1268" height="1078" alt="image" src="https://github.com/user-attachments/assets/4ac075af-924e-42ba-9f66-2903096860d8" />
 
-1. Clone this repository.
-2. Download the `.pbix` file from the [Releases](../../releases) tab.
-3. Open using **Power BI Desktop**.
+### 2. Geospatial & Route Analysis
+<img width="1244" height="1074" alt="image" src="https://github.com/user-attachments/assets/62804881-92f5-4044-ad64-44db7a9505ca" />
+
+### 3. Temporal Demand & Rush-Hour Trends
+<img width="1296" height="1096" alt="image" src="https://github.com/user-attachments/assets/a6ef580b-ab54-4237-8e18-2a9923e2ca09" />
+
+### 4. Pricing, Tipping & Economic Indicators
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/68a8e354-daad-4ee5-acd8-14b717033437" />
+
+---
+
+## 🚀 How to View the Dashboard
+
+1. Download the `.pbix` file from the **[Releases](https://github.com/ixgvah/nyc_taxi_dashboard/releases/latest)** tab.
+2. Open locally using **Microsoft Power BI Desktop**.
