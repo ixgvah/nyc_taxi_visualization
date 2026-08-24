@@ -80,5 +80,5 @@ The purpose was to optimize query performance and reduce overall dataset volume.
 
 ## 🚀 How to View the Dashboard
 
-1. Download the `.pbix` file from the **[Releases](https://github.com/ixgvah/nyc_taxi_dashboard/releases/latest)** tab.
+1. Download the `.pbix` file from the **[Releases](https://github.com/ixgvah/nyc_taxi_visualization/releases)** tab.
 2. Open locally using **Microsoft Power BI Desktop**.
